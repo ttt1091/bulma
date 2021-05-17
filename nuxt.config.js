@@ -43,6 +43,9 @@ export default {
     '@nuxtjs/bulma',
     '@nuxtjs/font-awesome',
     '@nuxt/content',
+    // '@nuxtjs/feed',
+    '@nuxt/image',
+    '@nuxtjs/dayjs',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -62,6 +65,20 @@ export default {
         theme: 'prism-themes/themes/prism-material-oceanic.css'
       }
     }
+  },
+  
+  image: {
+    // Options
+  },
+
+  dayjs: {
+    locales: ['ja', 'en'],
+    defaultLocale: 'ja',
+    defaultTimeZone: 'Asia/Tokyo',
+    plugins: [
+      'utc',
+      'timezone' // import 'dayjs/plugin/timezone'
+    ] // Your Day.js plugin
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

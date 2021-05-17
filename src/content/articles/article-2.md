@@ -19,3 +19,7 @@ https://www.suzu6.net/posts/265-nuxt-content-remark/#%E7%B5%B5%E6%96%87%E5%AD%97
 https://www.suzunatsu.com/post/nuxtjs-nuxtcontent/
 
 https://jun-app.com/series/nuxt-content-blog/1
+
+https://zenn.dev/kote2/articles/3fe4c7a8ad1797
+
+https://ja.nuxtjs.org/docs/2.x/directory-structure/content/

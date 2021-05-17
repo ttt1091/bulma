@@ -1,9 +1,10 @@
 <template lang="pug">
   .articles-container
     .articles
-      <article class="post-items" v-for="b in articles" :key="b.slug" :to="'/articles/'+ b.slug" nuxt>
-        <nuxt-link :to="'/articles/'+ b.slug">{{b.title}} {{b.date}}</nuxt-link>
-        <div>{{b.tags}}</div>
+      <article class="post-items" v-for="b in articles" :key="b.slug">
+        <nuxt-link :to="'/articles/'+ b.slug">{{b.title}} {{b.createdAt}}</nuxt-link>
+        div {{b.tags}}
+        div(v-text="$dayjs().format('YYYY-MM-DD')")
       </article>
 </template>
 <script>
@@ -15,3 +16,15 @@ export default {
   }
 }
 </script>
+
+
+<style lang="scss" scoped>
+.post-items{
+  margin: 8px;
+  padding: 8px;
+  border: solid 1px #ddd;
+  a{
+    display: block;
+  }
+}
+</style>
