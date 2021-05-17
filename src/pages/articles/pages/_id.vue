@@ -8,12 +8,8 @@
         </ul>
         <ul class="p-pagenation-container">
             <li class="c-pagenation-unit" v-for="(pg) in num" :key="pg.num">
-                <nuxt-link v-if="pg.pg" :to="'/articles/page/'+pg.num" :class="(current == pg.num)?'is-current':''">
-                    {{pg.num}}
-                </nuxt-link>
-                <span v-else>
-                    {{pg.num}}
-                </span>
+                nuxt-link(v-if="pg.pg" :to="'/articles/page/'+pg.num" :class="(current == pg.num)?'is-current':''") {{pg.num}}
+                <span v-else>{{pg.num}}</span>
             </li>
         </ul>
     </div>
@@ -35,7 +31,7 @@ export default {
 
         const content = await $content('articles')
         .only(['title','path'])
-        .sortBy('createdAt', 'desc')
+        .sortBy('updated_at', 'desc')
         .skip(from).limit(to)
         .fetch();
 
