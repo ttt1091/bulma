@@ -5,6 +5,7 @@
         a(:href="item.title") {{ item.title }}
         div {{ item.subtitle }}
     div https://content.nuxtjs.org/ja
+    div pug!!
 </template>
 
 <script lang="ts">
