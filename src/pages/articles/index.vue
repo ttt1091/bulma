@@ -1,11 +1,10 @@
 <template lang="pug">
   .articles-container
-    <div class="articles">
+    .articles
       <article class="post-items" v-for="b in articles" :key="b.slug" :to="'/articles/'+ b.slug" nuxt>
         <nuxt-link :to="'/articles/'+ b.slug">{{b.title}} {{b.date}}</nuxt-link>
         <div>{{b.tags}}</div>
       </article>
-    </div>
 </template>
 <script>
 export default {
