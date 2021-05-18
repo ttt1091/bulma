@@ -13,9 +13,15 @@ export default {
     const query = $content('articles', params.slug)
     const article = await query.fetch()
     return { article }
+  },
+  head() {
+    return {
+      title: this.article.title,
+    }
   }
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+h1{ font-size: 1.1rem; }
 </style>

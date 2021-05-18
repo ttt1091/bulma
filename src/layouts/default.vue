@@ -74,7 +74,7 @@ export default {
         },
       ],
       miniVariant: false,
-      title: 'SiteName'
+      title: 'BULMA'
     }
   },
 }
