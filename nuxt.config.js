@@ -24,6 +24,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    { src: '~/plugins/datechange.js', ssr: false },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -79,8 +80,8 @@ export default {
     defaultTimeZone: 'Asia/Tokyo',
     plugins: [
       'utc',
-      'timezone' // import 'dayjs/plugin/timezone'
-    ] // Your Day.js plugin
+      'timezone'
+    ]
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
