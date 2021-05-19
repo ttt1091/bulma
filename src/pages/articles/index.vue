@@ -2,7 +2,7 @@
   .articles-container
     .articles
       <article class="post-items" v-for="b in articles" :key="b.slug">
-        <nuxt-link :to="'/articles/'+ b.slug">{{b.title}} {{$dateTimeToJaDate(b.createdAt)}}</nuxt-link>
+        <nuxt-link :to="'/articles/'+ b.slug">{{b.title}} {{$dateTimeToJaDate(b.updated_at)}}</nuxt-link>
         div {{b.tags}}
         div(v-text="$dayjs().format('YYYY-MM-DD')")
       </article>

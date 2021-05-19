@@ -1,8 +1,13 @@
 ---
 title: article2
+description: 'Learn how to use @nuxt/content.'
+position: 1
+category: 解説
 tags: 
   - test, tags
-description: Learn how to use @nuxt/content.
+version: 1.0
+fullscreen: false
+created_at: 2021-05-02
 updated_at: 2021-05-02
 ---
 
@@ -23,3 +28,8 @@ https://jun-app.com/series/nuxt-content-blog/1
 https://zenn.dev/kote2/articles/3fe4c7a8ad1797
 
 https://ja.nuxtjs.org/docs/2.x/directory-structure/content/
+
+tags & Categorys
+https://jun-app.com/series/nuxt-content-blog/4/
+
+https://blog.mktia.com/

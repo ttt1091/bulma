@@ -1,9 +1,14 @@
 ---
 title: money
+description: 'moneyのページ'
+position: 1
+category: 解説
 tags: 
-  - money
-description: aaa
+  - test, お金
+version: 1.0
+fullscreen: false
+created_at: 2021-05-03
 updated_at: 2021-05-03
 ---
 
-aaa
+お金はとても大事なものだってこと

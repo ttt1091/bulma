@@ -72,6 +72,11 @@ export default {
           title: 'Articles',
           to: '/articles'
         },
+        {
+          icon: 'mdi-book-open-variant',
+          title: 'POSTS',
+          to: '/posts'
+        },
       ],
       miniVariant: false,
       title: 'BULMA'

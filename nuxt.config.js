@@ -24,7 +24,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    { src: '~/plugins/datechange.js', ssr: false },
+    { src: '~/plugins/datechange.js', ssr: true },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -95,5 +95,8 @@ export default {
       const files = await $content({ deep: true }).only(['path']).fetch()
       return files.map(file => file.path === '/index' ? '/' : file.path);
     },
+    routes: [
+      '/articles/',
+    ],
   }
 }

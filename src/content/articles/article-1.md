@@ -1,7 +1,13 @@
 ---
 title: hey
-tags:
+description: 'hey'
+position: 1
+category: 解説
+tags: 
   - test
+version: 1.0
+fullscreen: false
+created_at: 2021-05-01
 updated_at: 2021-05-01
 ---
 

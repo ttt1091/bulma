@@ -3,10 +3,12 @@ title: 知ってそうで知らない金運の秘密
 description: '金運とは一体どういうものなのか'
 position: 1
 category: 解説
-version: 1
+tags: 
+  - test, 金運
+version: 1.0
 fullscreen: false
-updated_at: 2021-05-08
 created_at: 2021-05-08
+updated_at: 2021-05-08
 ---
 
 このページに来た方は金運を上げたい、興味がある方だと思います。<br>
