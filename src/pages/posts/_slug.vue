@@ -1,9 +1,22 @@
 <template>
-  <article class="container mx-auto my-8 px-20 md:px-0">
-    <h1 class="text-center text-3xl font-bold my-8">{{ article.title || '' }}</h1>
-    <div class="content bg-white rounded">
-      <nuxt-content :document="article" />
-    </div>
+  <article>
+    <v-card
+      class="mx-auto"
+    >
+      <v-img
+        class="white--text align-end"
+        max-height="400px"
+        :src="require('@/assets/images/thumbnails/'+article.thumbnail)"
+      >
+        <v-card-title><h1 class="">{{ article.title || '' }}</h1></v-card-title>
+      </v-img>
+
+      <v-card-subtitle class="pb-0">{{$dateTimeToJaDate(article.updated_at)}}</v-card-subtitle>
+
+      <v-card-text class="text--primary">
+        <nuxt-content :document="article" />
+      </v-card-text>
+    </v-card>
   </article>
 </template>
 
@@ -13,61 +26,21 @@ export default {
     const query = $content('articles', params.slug)
     const article = await query.fetch()
     return { article }
+  },
+  data () {
+    return {
+    }
   }
 }
 </script>
 
-<style lang="scss">
-.nuxt-content {
-  h1 {
-    margin: 48px 0px 28px;
-    font-size: 1.6rem;
-    font-weight: bold;
-    padding: 8px 12px 8px 16px;
-    border-left: 6px solid rgb(59, 130, 246);
-    background: #f2f2f2;
-  }
-
-  h2 {
-    border-left: 6px solid rgb(59, 130, 246);
-    padding: 8px 12px 8px 16px;
-    margin: 28px 0px 16px;
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-
-  h3 {
-    font-size: 1.1rem;
-    font-weight: bold;
-  }
-
-  h4, h5, h6 {
-    font-weight: bold;
-  }
-
-  strong {
-    font-weight: bold;
-  }
-
-  em {
-
-  }
-
-  a {
-    color: rgb(59, 130, 246);
-    text-decoration: underline;
-  }
-
-  p {
-    margin: 20px 0 10px;
-  }
-
-  code {
-
-  }
-
-  pre code {
-
-  }
+<style>
+.v-card__title{
+  background: #FFF;
+  color: #444;
+  font-size: 1rem;
+  margin: 0 16px -16px 16px;
+  border-radius: 0.35rem;
+  padding: 8px;
 }
 </style>

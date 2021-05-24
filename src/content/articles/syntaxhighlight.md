@@ -2,6 +2,7 @@
 title: SyntaxHighlight
 description: 'SyntaxHighlight'
 position: 1
+thumbnail: 'thumbnail-002.png'
 category: 解説
 tags: 
   - test, code

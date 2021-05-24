@@ -2,6 +2,7 @@
 title: article2
 description: 'Learn how to use @nuxt/content.'
 position: 1
+thumbnail: 'thumbnail-001.png'
 category: 解説
 tags: 
   - test, tags

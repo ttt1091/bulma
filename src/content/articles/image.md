@@ -2,6 +2,7 @@
 title: ImageTest
 description: 'ImageTest'
 position: 1
+thumbnail: thumbnail-001.png
 category: 解説
 tags: 
   - test, image

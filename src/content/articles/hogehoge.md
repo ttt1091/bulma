@@ -2,6 +2,7 @@
 title: hogehoge
 description: 'hogehoge'
 position: 1
+thumbnail: 'thumbnail-001.png'
 category: 解説
 tags: 
   - test, hoge

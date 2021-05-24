@@ -2,6 +2,7 @@
 title: money
 description: 'moneyのページ'
 position: 1
+thumbnail: thumbnail-001.png
 category: 解説
 tags: 
   - test, お金

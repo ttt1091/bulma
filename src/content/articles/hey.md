@@ -2,6 +2,7 @@
 title: 知ってそうで知らない金運の秘密
 description: '金運とは一体どういうものなのか'
 position: 1
+thumbnail: thumbnail-001.png
 category: 解説
 tags: 
   - test, 金運
