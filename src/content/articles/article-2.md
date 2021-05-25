@@ -34,3 +34,6 @@ tags & Categorys
 https://jun-app.com/series/nuxt-content-blog/4/
 
 https://blog.mktia.com/
+
+lazy load
+https://note.com/camelstudio/n/n11b12e9a3466
