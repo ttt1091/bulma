@@ -1,5 +1,6 @@
 <template>
   <v-card :to="slug">
+    <BreadCrumb :bread-crumbs="breadCrumbs" />
     <article class="border p-4 rounded my-4">
       <h2 class="text-xl font-bold">{{ title }}</h2>
       <time class="text-right text-sm text-gray-700">{{ date }}</time>
@@ -17,7 +18,11 @@
 </template>
 
 <script>
+import BreadCrumb from '~/components/BreadCrumb';
 export default {
+  components: {
+    BreadCrumb,
+  },
   props: {
     title: String,
     date: String,
